@@ -1,0 +1,514 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>choplogik.org</title>
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/lightbox.js"></script>
+<style type="text/css">
+<!--
+#Layer1 {
+	position:absolute;
+	left:17px;
+	top:9px;
+	width:150px;
+	height:139px;
+	z-index:1;
+}
+#Layer2 {
+	position:absolute;
+	left:17px;
+	top:142px;
+	width:150px;
+	height:30px;
+	z-index:2;
+}
+.style1 {font-family: Georgia, "Times New Roman", Times, serif}
+#Layer3 {
+	position: absolute;
+	left: 541px;
+	top: 811px;
+	width: 250px;
+	height: 73px;
+	z-index: 32;
+}
+#Layer4 {
+	position: absolute;
+	left: 475px;
+	top: 826px;
+	width: 250px;
+	height: 98px;
+	z-index: 4;
+}
+#Layer5 {
+	position:absolute;
+	left:557px;
+	top:375px;
+	width:250px;
+	height:371px;
+	z-index:5;
+}
+#Layer6 {
+	position:absolute;
+	left:706px;
+	top:24px;
+	width:179px;
+	height:35px;
+	z-index:6;
+}
+#Layer7 {
+	position:absolute;
+	left:30px;
+	top:771px;
+	width:250px;
+	height:245px;
+	z-index:7;
+}
+#Layer8 {
+	position:absolute;
+	left:300px;
+	top:632px;
+	width:244px;
+	height:201px;
+	z-index:8;
+}
+#Layer9 {
+	position:absolute;
+	left:291px;
+	top:771px;
+	width:252px;
+	height:256px;
+	z-index:8;
+}
+#Layer10 {
+	position:absolute;
+	left:557px;
+	top:771px;
+	width:251px;
+	height:334px;
+	z-index:9;
+}
+#Layer11 {
+	position:absolute;
+	left:32px;
+	top:1137px;
+	width:250px;
+	height:249px;
+	z-index:10;
+}
+#Layer12 {
+	position:absolute;
+	left:293px;
+	top:1137px;
+	width:250px;
+	height:235px;
+	z-index:11;
+}
+#inspire {
+	position:absolute;
+	left:563px;
+	top:1137px;
+	width:250px;
+	height:235px;
+	z-index:12;
+}
+#Layer14 {
+	position:absolute;
+	left:30px;
+	top:659px;
+	width:250px;
+	height:56px;
+	z-index:13;
+}
+#Layer15 {
+	position:absolute;
+	left:292px;
+	top:580px;
+	width:250px;
+	height:97px;
+	z-index:14;
+}
+#Layer16 {
+	position:absolute;
+	left:557px;
+	top:580px;
+	width:250px;
+	height:106px;
+	z-index:15;
+}
+#Layer17 {
+	position:absolute;
+	left:31px;
+	top:1026px;
+	width:250px;
+	height:109px;
+	z-index:16;
+}
+#Layer18 {
+	position:absolute;
+	left:292px;
+	top:658px;
+	width:250px;
+	height:125px;
+	z-index:17;
+}
+#Layer19 {
+	position:absolute;
+	left:557px;
+	top:658px;
+	width:250px;
+	height:123px;
+	z-index:18;
+}
+#Layer20 {
+	position:absolute;
+	left:291px;
+	top:1026px;
+	width:250px;
+	height:105px;
+	z-index:19;
+}
+#Layer21 {
+	position:absolute;
+	left:558px;
+	top:1026px;
+	width:250px;
+	height:106px;
+	z-index:20;
+}
+#Layer22 {
+	position:absolute;
+	left:35px;
+	top:1386px;
+	width:250px;
+	height:99px;
+	z-index:21;
+}
+#Layer23 {
+	position:absolute;
+	left:294px;
+	top:1386px;
+	width:250px;
+	height:113px;
+	z-index:22;
+}
+#Layer24 {
+	position:absolute;
+	left:562px;
+	top:1386px;
+	width:250px;
+	height:83px;
+	z-index:23;
+}
+-->
+</style>
+<style type="text/css">
+<!--
+#Layer13 {
+	position:absolute;
+	left:143px;
+	top:282px;
+	width:568px;
+	height:80px;
+	z-index:24;
+}
+#Layer25 {
+	position:absolute;
+	left:733px;
+	top:93px;
+	width:299px;
+	height:248px;
+	z-index:25;
+}
+#Layer26 {
+	position:absolute;
+	left:701px;
+	top:29px;
+	width:94px;
+	height:70px;
+	z-index:1;
+}
+#Layer27 {
+	position:absolute;
+	left:838px;
+	top:348px;
+	width:84px;
+	height:27px;
+	z-index:26;
+}
+a:link {
+	color: #000000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #333333;
+}
+a:hover {
+	text-decoration: underline;
+	color: #333333;
+}
+a:active {
+	text-decoration: none;
+	color: #666666;
+}
+#Layer28 {
+	position:absolute;
+	left:142px;
+	top:375px;
+	width:250px;
+	height:279px;
+	z-index:25;
+}
+#Layer29 {
+	position:absolute;
+	left:462px;
+	top:375px;
+	width:250px;
+	height:256px;
+	z-index:26;
+}
+#Layer30 {
+	position:absolute;
+	left:738px;
+	top:301px;
+	width:251px;
+	height:89px;
+	z-index:27;
+}
+#Layer31 {
+	position:absolute;
+	left:461px;
+	top:661px;
+	width:251px;
+	height:75px;
+	z-index:28;
+}
+#Layer32 {
+	position:absolute;
+	left:204px;
+	top:1083px;
+	width:776px;
+	height:358px;
+	z-index:25;
+}
+.style6 {
+	font-size: 14px;
+	font-weight: bold;
+}
+#Layer33 {
+	position: absolute;
+	left: 187px;
+	top: 2189px;
+	width: 796px;
+	height: 1069px;
+	z-index: 26;
+}
+#Layer34 {
+	position: absolute;
+	left: 467px;
+	top: 2931px;
+	width: 162px;
+	height: 25px;
+	z-index: 27;
+}
+.style11 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-style: italic;
+}
+.style13 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 14px;
+}
+.style14 {font-size: 12px}
+#Layer35 {
+	position: absolute;
+	left: 204px;
+	top: 2269px;
+	width: 769px;
+	height: 476px;
+	z-index: 28;
+	text-align: left;
+}
+.style17 {
+	font-size: 36px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+#Layer36 {
+	position:absolute;
+	left:251px;
+	top:45px;
+	width:626px;
+	height:484px;
+	z-index:29;
+}
+.style18 {
+	font-size: 26px;
+	font-weight: bold;
+	font-family: Verdana, Geneva, sans-serif;
+	text-align: left;
+}
+#apDiv1 {
+	position: absolute;
+	left: 171px;
+	top: 969px;
+	width: 1571px;
+	height: 812px;
+	z-index: 1;
+	text-align: center;
+	font-family: Verdana, Geneva, sans-serif;
+}
+#apDiv1 form {
+	text-align: center;
+}
+p {
+	font-size: 14px;
+	text-align: left;
+}
+.style4 {font-family: Arial, Helvetica, sans-serif; font-size: 10px; }
+.style181 {font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 18px; }
+.style5 {	font-size: 14px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.style5 {	font-size: 14px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+strong {
+	text-align: center;
+}
+#apDiv2 {
+	position: absolute;
+	left: 710px;
+	top: 787px;
+	width: 384px;
+	height: 383px;
+	z-index: 29;
+	font-family: Verdana, Geneva, sans-serif;
+	text-align: center;
+	font-size: 14px;
+}
+#apDiv2 {
+	font-family: Verdana, Geneva, sans-serif;
+}
+#apDiv3 {
+	position: absolute;
+	left: 521px;
+	top: 1836px;
+	width: 560px;
+	height: 176px;
+	z-index: 29;
+	text-align: center;
+}
+#apDiv4 {
+	position: absolute;
+	left: 184px;
+	top: 23px;
+	width: 1540px;
+	height: 505px;
+	z-index: 30;
+}
+.style51 {	font-size: 14px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+#Layer37 {	position: absolute;
+	left: 286px;
+	top: 445px;
+	width: 301px;
+	height: 91px;
+	z-index: 32;
+}
+#apDiv5 {
+	position: absolute;
+	left: 181px;
+	top: 676px;
+	width: 803px;
+	height: 79px;
+	z-index: 31;
+	text-align: center;
+}
+.price {
+	font-size: 36px;
+}
+.price {
+	font-style: italic;
+}
+#apDiv5 .price {
+	font-weight: bold;
+}
+-->
+</style>
+</head>
+
+<body>
+<div id="apDiv1">
+  <p><strong class="style18"><em>'The Secret Eater' </em>Stuffed Doll</strong><br />
+    <img src="i/se1.jpg" width="615" height="800" /> <img src="i/se2z.jpg" width="575" height="800" /><br />  
+  </p>
+</div>
+<div class="style13" id="apDiv3">Hand-sewn printed stuffed doll<br />
+  Stands a formidable
+16&quot; tall<br />
+comes with a stamped &amp; numbered title tag
+<br />
+<br />
+The Secret Eater is a friendly spirit that stores secrets &amp; whispers in its wisps. <br />
+Hug it close and confide in it at least once a day to keep it well-fed &amp; plump! <br />
+<br />
+<span class="style17">$40</span> <br />
+<br />
+<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="9T6EG9QD92NGS">
+<input name="submit" type="image" src="i/addcart.jpg" alt="PayPal - The safer, easier way to pay online!" border="0">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</div>
+<div id="apDiv4"><span class="style18">New Print - &quot;Up And Art 'Em&quot;</span><br />
+  <img src="i/upandartem2.jpg" width="706" height="600" /> <img src="i/upandartem3.jpg" width="761" height="600" /><br />
+  <br />
+</div>
+<br />
+<div class="style5" id="apDiv5">a hello good morning to you! let's create today why not! <br />
+  it's not always easy.. so this picture is here to help you become jazzed up!<br />
+Print measures 10&quot;x8&quot; on acid-free, archival  cold-press paper. 300 g/m&sup2;, 100% cotton rag.<br />
+  
+A small  shipping fee will be applied. Ships worldwide!<br />
+<br />
+<span class="price">$20 </span> </div>
+<link href="css/lightbox.css" rel="stylesheet" />
+<div id="Layer1"> 
+  <div>
+    <div><a href="index.html"><img src="i/gleepglopani.gif" width="150" height="150" border="0" /></a></div>
+  </div>
+</div>
+<div id="Layer2">
+      <div align="center">
+      <p><span class="style13">russell alton<br />choplogik.org</span><br />
+        <br />
+<span class="style11"><a href="cards.html">cards</a><br />
+        <a href="prints.html">prints</a><br />
+        <a href="gallery.html">arts</a><br />
+        <a href="bio.html">about<br />
+        </a><a href="https://twitter.com/Choplogik" target="_blank">tweet</a><br />
+        <a href="http://choplogik.tumblr.com/" target="_blank">tumbl</a><br />
+        <a href="http://www.facebook.com/Choplogik.Art" target="_blank">fbook</a><br />
+        <a href="http://instagram.com/choplogik">insta</a><br />
+        <a href="mailto:choplogik@gmail.com" class="style14">choplogik@gmail.com</a><br />
+      </a></span></p>
+    
+  </div>
+</div>
+<br />
+<div id="Layer3">
+  <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="DUMHFEHWGPLYJ">
+<input type="image" src="i/addcart.jpg" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+  </form>
+
+</div>
+</body>
+</html>

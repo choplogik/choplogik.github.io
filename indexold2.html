@@ -1,0 +1,473 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>choplogik.org</title>
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/lightbox.js"></script>
+<style type="text/css">
+<!--
+#Layer1 {
+	position:absolute;
+	left:17px;
+	top:9px;
+	width:150px;
+	height:139px;
+	z-index:1;
+}
+#Layer2 {
+	position:absolute;
+	left:17px;
+	top:142px;
+	width:150px;
+	height:30px;
+	z-index:2;
+}
+.style1 {font-family: Georgia, "Times New Roman", Times, serif}
+#Layer3 {
+	position:absolute;
+	left:28px;
+	top:375px;
+	width:250px;
+	height:329px;
+	z-index:3;
+}
+#Layer4 {
+	position: absolute;
+	left: 475px;
+	top: 826px;
+	width: 250px;
+	height: 98px;
+	z-index: 4;
+}
+#Layer5 {
+	position:absolute;
+	left:557px;
+	top:375px;
+	width:250px;
+	height:371px;
+	z-index:5;
+}
+#Layer6 {
+	position:absolute;
+	left:706px;
+	top:24px;
+	width:179px;
+	height:35px;
+	z-index:6;
+}
+#Layer7 {
+	position:absolute;
+	left:30px;
+	top:771px;
+	width:250px;
+	height:245px;
+	z-index:7;
+}
+#Layer8 {
+	position:absolute;
+	left:300px;
+	top:632px;
+	width:244px;
+	height:201px;
+	z-index:8;
+}
+#Layer9 {
+	position:absolute;
+	left:291px;
+	top:771px;
+	width:252px;
+	height:256px;
+	z-index:8;
+}
+#Layer10 {
+	position:absolute;
+	left:557px;
+	top:771px;
+	width:251px;
+	height:334px;
+	z-index:9;
+}
+#Layer11 {
+	position:absolute;
+	left:32px;
+	top:1137px;
+	width:250px;
+	height:249px;
+	z-index:10;
+}
+#Layer12 {
+	position:absolute;
+	left:293px;
+	top:1137px;
+	width:250px;
+	height:235px;
+	z-index:11;
+}
+#inspire {
+	position:absolute;
+	left:563px;
+	top:1137px;
+	width:250px;
+	height:235px;
+	z-index:12;
+}
+#Layer14 {
+	position:absolute;
+	left:30px;
+	top:659px;
+	width:250px;
+	height:56px;
+	z-index:13;
+}
+#Layer15 {
+	position:absolute;
+	left:292px;
+	top:580px;
+	width:250px;
+	height:97px;
+	z-index:14;
+}
+#Layer16 {
+	position:absolute;
+	left:557px;
+	top:580px;
+	width:250px;
+	height:106px;
+	z-index:15;
+}
+#Layer17 {
+	position:absolute;
+	left:31px;
+	top:1026px;
+	width:250px;
+	height:109px;
+	z-index:16;
+}
+#Layer18 {
+	position:absolute;
+	left:292px;
+	top:658px;
+	width:250px;
+	height:125px;
+	z-index:17;
+}
+#Layer19 {
+	position:absolute;
+	left:557px;
+	top:658px;
+	width:250px;
+	height:123px;
+	z-index:18;
+}
+#Layer20 {
+	position:absolute;
+	left:291px;
+	top:1026px;
+	width:250px;
+	height:105px;
+	z-index:19;
+}
+#Layer21 {
+	position:absolute;
+	left:558px;
+	top:1026px;
+	width:250px;
+	height:106px;
+	z-index:20;
+}
+#Layer22 {
+	position:absolute;
+	left:35px;
+	top:1386px;
+	width:250px;
+	height:99px;
+	z-index:21;
+}
+#Layer23 {
+	position:absolute;
+	left:294px;
+	top:1386px;
+	width:250px;
+	height:113px;
+	z-index:22;
+}
+#Layer24 {
+	position:absolute;
+	left:562px;
+	top:1386px;
+	width:250px;
+	height:83px;
+	z-index:23;
+}
+-->
+</style>
+<style type="text/css">
+<!--
+#Layer13 {
+	position:absolute;
+	left:143px;
+	top:282px;
+	width:568px;
+	height:80px;
+	z-index:24;
+}
+#Layer25 {
+	position:absolute;
+	left:733px;
+	top:93px;
+	width:299px;
+	height:248px;
+	z-index:25;
+}
+#Layer26 {
+	position:absolute;
+	left:701px;
+	top:29px;
+	width:94px;
+	height:70px;
+	z-index:1;
+}
+#Layer27 {
+	position:absolute;
+	left:838px;
+	top:348px;
+	width:84px;
+	height:27px;
+	z-index:26;
+}
+a:link {
+	color: #000000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #333333;
+}
+a:hover {
+	text-decoration: underline;
+	color: #333333;
+}
+a:active {
+	text-decoration: none;
+	color: #666666;
+}
+#Layer28 {
+	position:absolute;
+	left:142px;
+	top:375px;
+	width:250px;
+	height:279px;
+	z-index:25;
+}
+#Layer29 {
+	position:absolute;
+	left:462px;
+	top:375px;
+	width:250px;
+	height:256px;
+	z-index:26;
+}
+#Layer30 {
+	position:absolute;
+	left:738px;
+	top:301px;
+	width:251px;
+	height:89px;
+	z-index:27;
+}
+#Layer31 {
+	position:absolute;
+	left:461px;
+	top:661px;
+	width:251px;
+	height:75px;
+	z-index:28;
+}
+#Layer32 {
+	position:absolute;
+	left:204px;
+	top:1083px;
+	width:776px;
+	height:358px;
+	z-index:25;
+}
+.style6 {
+	font-size: 14px;
+	font-weight: bold;
+}
+#Layer33 {
+	position: absolute;
+	left: 187px;
+	top: 1333px;
+	width: 796px;
+	height: 1069px;
+	z-index: 26;
+}
+#Layer34 {
+	position: absolute;
+	left: 626px;
+	top: 1380px;
+	width: 162px;
+	height: 25px;
+	z-index: 27;
+}
+.style11 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-style: italic;
+}
+.style13 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 14px;
+}
+.style14 {font-size: 12px}
+#Layer35 {
+	position: absolute;
+	left: 204px;
+	top: 2269px;
+	width: 769px;
+	height: 476px;
+	z-index: 28;
+	text-align: left;
+}
+.style17 {
+	font-size: 36px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+#Layer36 {
+	position:absolute;
+	left:251px;
+	top:45px;
+	width:626px;
+	height:484px;
+	z-index:29;
+}
+.style18 {
+	font-size: 30px;
+	font-weight: bold;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: italic;
+}
+#apDiv1 {
+	position: absolute;
+	left: 171px;
+	top: 25px;
+	width: 518px;
+	height: 812px;
+	z-index: 1;
+	text-align: center;
+	font-family: Verdana, Geneva, sans-serif;
+}
+#apDiv1 form {
+	text-align: center;
+}
+p {
+	font-size: 14px;
+	text-align: center;
+}
+.style4 {font-family: Arial, Helvetica, sans-serif; font-size: 10px; }
+.style181 {font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 18px; }
+.style5 {	font-size: 14px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.style5 {	font-size: 14px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+strong {
+	text-align: center;
+}
+#apDiv2 {
+	position: absolute;
+	left: 243px;
+	top: 796px;
+	width: 384px;
+	height: 383px;
+	z-index: 29;
+	font-family: Verdana, Geneva, sans-serif;
+	text-align: center;
+	font-size: 14px;
+}
+#apDiv2 {
+	font-family: Verdana, Geneva, sans-serif;
+}
+#apDiv3 {
+	position: absolute;
+	left: 1112px;
+	top: 123px;
+	width: 67px;
+	height: 90px;
+	z-index: 30;
+}
+#apDiv4 {
+	position: absolute;
+	left: 43px;
+	top: 382px;
+	width: 78px;
+	height: 53px;
+	z-index: 3;
+}
+-->
+</style>
+</head>
+
+<body>
+<div id="apDiv1">
+  <p><strong>New Print Available - Unified Theory of the Hugiverse
+  </strong><br />
+  <br />
+    <img src="i/hugiversenew.jpg" width="529" height="700" /><br />
+    <br />
+    <span class="style11">a fresh twist on an old classic! <br />
+    8.5&quot;x11&quot; deep blue archival giclee print on thick 300 g/m&sup2; acid-free paper<br />
+  open edition, each print signed &amp; rear-stamped<br />
+    flat rate worldwide shipping</span>
+  <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+    <div align="center">
+      <p><span class="style18">$30</span><br />
+        <br />
+        <input type="hidden" name="cmd" value="_s-xclick" />
+        <input type="hidden" name="hosted_button_id" value="9X4J8DLG9C5UJ" />
+        <input type="image" src="i/addcart.jpg" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" /> </p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+    </div>
+  </form><br />  
+  </p>
+</div>
+<div id="apDiv4"><form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="i/viewcart.jpg" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</div>
+<link href="css/lightbox.css" rel="stylesheet" />
+<div id="Layer1"> 
+  <div>
+    <div><a href="index.html"><img src="i/gleepglopani.gif" width="150" height="150" border="0" /></a></div>
+  </div>
+</div>
+<div id="Layer2">
+      <div align="center">
+      <p><span class="style13">russell alton<br />choplogik.org</span><br />
+        <br />
+<span class="style11"><a href="cards.html">cards</a><br />
+        <a href="prints.html">prints</a><br />
+        <a href="gallery.html">arts</a><br />
+        <a href="bio.html">about<br />
+        </a><a href="https://twitter.com/Choplogik" target="_blank">tweet</a><br />
+        <a href="http://choplogik.tumblr.com/" target="_blank">tumbl</a><br />
+        <a href="http://www.facebook.com/Choplogik.Art" target="_blank">fbook</a><br />
+        <a href="http://instagram.com/choplogik">insta</a><br />
+        <a href="mailto:choplogik@gmail.com" class="style14">choplogik@gmail.com</a><br />
+      </a></span></p>
+    
+  </div>
+</div>
+<br />
+</body>
+</html>
