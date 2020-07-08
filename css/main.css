@@ -1,0 +1,376 @@
+/* BODY STYLING */
+body {
+  font-family: 'Arial', 'Helvetica', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+/* HEADER + FOOTER STYLING */
+footer{
+  padding-bottom:0.5rem;
+	padding-top:5rem;
+}
+
+footer p{
+  font-size: 0.8rem;
+  font-weight: 400;
+	font-style: italic;
+	line-height: 1.25rem;
+}
+
+/* UPDATE/NOTIFICATION BANNER */
+.banner{
+  position: fixed;
+  background-color: #E8FFFF;
+  box-shadow: 0rem 0.3rem #FFCCFF;
+  border: 1px black dashed;
+  z-index: 6;
+  display:none;
+}
+
+.banner p, footer p{
+  display:inline;
+  margin:0rem;
+  font-family: 'Times New Roman', serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 1.2rem;
+}
+
+/* SIDEBAR + NAV LINKS STYLING*/
+.sidebar-main{
+  position: fixed;
+  max-width:9rem;
+	padding:1rem;
+  z-index:5;
+	text-align: center;
+  font-family: 'Geneva', 'Arial', 'Helvetica', sans-serif;
+  display: none;
+  /* background-color: #FFDCDC; */
+}
+
+.sidebar-mobile{
+  position: fixed;
+  width:100%;
+  font-family: 'Geneva', 'Arial', 'Helvetica', sans-serif;
+
+  background-color: #E8FFFF;
+  box-shadow: 0rem 0.3rem #FFCCFF;
+  border: 1px black dashed;
+  z-index: 10;
+}
+
+.sidebar-mobile input, .sidebar-mobile form{
+  width:100%;
+  max-width:7rem;
+  min-width:5rem;
+  height:auto;
+  padding-right:1rem;
+  margin:auto;
+}
+
+.sidebar-mobile p{
+  display:inline;
+  margin:0rem;
+  padding-right:1rem;
+  min-width: 12rem;
+  font-family: 'Times New Roman', serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  line-height: 1rem;
+}
+
+.sidebar-main p{
+	font-style: italic;
+	line-height: 1.25rem;
+	margin: 0;
+}
+
+.sidebar-main p:last-of-type{
+	margin-bottom:1rem;
+}
+
+.sidebar-main a.nav-button:first-of-type{
+  margin-top:1rem;
+}
+
+.sidebar-main a.nav-button.current{
+  text-decoration: underline;
+}
+
+.sidebar-main input{
+  width:6rem;
+  height:auto;
+  margin:auto;
+  margin-top:1.25rem;
+}
+
+.nav-button{
+	font-style: italic;
+	text-decoration: none;
+	display: block;
+	font-size: 1rem;
+	line-height: 1.35rem;
+}
+
+.sidebar-main .nav-button.email{
+	font-size:0.75rem;
+  margin-top:1rem;
+}
+
+.nav-button:hover{
+		text-decoration: underline;
+}
+
+*,*:focus,*:hover{
+    outline:none;
+}
+
+.mobile-menu-items{
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+
+  height: -webkit-calc(100% - 3.9rem);
+  height:    -moz-calc(100% - 3.9rem);
+  height:         calc(100% - 3.9rem);
+  margin-top:3.9rem;
+
+  position: fixed;
+  left: 0rem;
+  z-index:0;
+  overflow-y: scroll;
+  background: white;
+
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
+  transition: left .25s ease;
+}
+
+.mobile-menu-items::-webkit-scrollbar {
+  display: none;
+}
+
+.mobile-menu-items a.nav-button{
+  padding: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.hide-left{
+  left:-200%;
+  transition:left .5s ease;
+}
+
+/* HEADERS STYLING */
+h1{
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-style: italic;
+  margin: 0rem;
+  line-height: 1.3rem;
+}
+
+h2{
+	font-size: 1.5rem;
+  font-weight: 600;
+	color: black;
+  display:block;
+	padding-top:1.5rem;
+  text-align: center;
+}
+
+h3{
+  font-size: 0.8rem;
+  margin:0.5rem;
+}
+
+h4{
+  font-family: 'Georgia', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.3rem;
+  text-align: left;
+  margin-top:2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* MORE TEXT STYLING */
+p{
+  font-size: 1rem;
+  font-weight: 300;
+	line-height: 1.5rem;
+  text-align: center;
+}
+
+.prints p{
+  font-size: 0.8rem;
+  line-height: normal;
+}
+
+.prints p.tiny{
+  max-width: 25rem;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.bio p{
+  font-family: 'Georgia', sans-serif;
+  text-align: left;
+  line-height: 1.4rem;
+  margin-top:0.5rem;
+  margin-bottom: 0.5rem;
+  padding:0;
+  max-width:45rem;
+}
+
+.bio p.top{
+  margin-top: 3.5rem;
+}
+
+strong{
+  font-weight: bold;
+}
+
+.highlight{
+	color: #F0C;
+}
+
+p.caption{
+	font-family: 'Georgia', 'Times New Roman', serif;
+	font-style: italic;
+	font-size: 0.9rem;
+	margin-top:0.8rem;
+	margin-bottom:0rem;
+}
+
+p.price{
+	font-family: 'Georgia', 'Times New Roman', serif;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 2rem;
+	margin-bottom:0.75rem;
+	margin-top:1.5rem;
+}
+
+p.tiny{
+	font-size:0.7rem;
+	margin-top:1rem;
+	margin-bottom:0.5rem;
+	line-height: 0.9rem;
+}
+
+p.divider{
+	font-size: 0.8rem;
+	font-weight: 600;
+	color: #F0C;
+	text-transform: uppercase;
+	display:block;
+  margin-bottom: 1rem;
+}
+
+sub{
+	font-size: 1rem;
+	bottom: 0rem;
+}
+
+/* SIZE DROPDOWN STYLING */
+form {
+	text-align: center;
+}
+
+select {
+	font-size: 0.8rem;
+	margin-bottom:1rem;
+}
+
+/* LIST STYLING */
+ul{
+	list-style-type: none;
+	padding:0;
+	margin-bottom:0;
+}
+
+li{
+	font-weight: normal;
+	text-align: center;
+	line-height: 1.25rem;
+}
+
+li.bold{
+  font-weight: bold;
+}
+
+li:before {
+  content: "\2729";
+	color: #F0C;
+}
+
+/* LINK STYLING */
+a{
+	color: black;
+	text-decoration: underline;
+	font-style: italic;
+}
+
+a.hover{
+	text-decoration: underline;
+}
+
+/* IMAGE STYLING */
+img{
+  width:100%;
+  height:auto;
+}
+
+img.tracking{
+  display: none;
+}
+
+input{
+  margin-top:0.5rem;
+}
+
+.container img{
+	width:100%;
+	height:auto;
+  align-self:center;
+}
+
+.prints img{
+  width:100%;
+  max-width:25rem;
+  padding:0;
+  margin:0;
+  border:1px solid black;
+}
+
+/* MISC ELEMENT STYLING */
+.buybutton{
+  margin-bottom:1rem;
+}
+
+/* MEDIA QUERIES */
+@media(min-width:45em){ /* 733px — sidebar appears*/
+  nav.sidebar-main {
+    display: inline-block;
+    position: fixed;
+    left: 0;
+    top: 1.5rem;
+  }
+
+  .notification, .banner{
+    display: block;
+  }
+
+  nav.sidebar-mobile{
+    display:none;
+  }
+
+  nav.cart-mobile{
+    display:none;
+  }
