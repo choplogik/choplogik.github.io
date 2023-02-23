@@ -95,12 +95,11 @@
       </div>
 
       <p class="divider">︵‿︵‿︵‿︵</p>
-      <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-        <input type="hidden" name="cmd" value="_s-xclick" />
-        <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
-    " />
-        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
-        <img alt="" class="tracking" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+          <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_viewcart_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" class="tracking" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
       </form>
     </nav>
 
@@ -136,54 +135,52 @@
 				<p class="price">$35 <sub>CAD</sub></p>
 
 				<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-              <input type="hidden" name="cmd" value="_s-xclick" />
-              <input type="hidden" name="hosted_button_id" value="3PRQQ228KZLR8" />
-              <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="3PRQQ228KZLR8">
+              <input type="image" src="img/addcart.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
             <img alt="" class="tracking" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
         </form>
 			</div>
 
-			<!-- rainbow vision -->
-			<div class="one-of-3">
-				<h3>Rainbow Vision</h3>
-				<a href="img/rainbowvision.jpg" target="_blank"><img src="img/rainbowvision_thumbnail.jpg"></a>
+      <!-- awe n splendor -->
+      <div class="one-of-3">
+        <h3>Awe & Splendor</h3>
+        <a href="img/awesplendor.jpg" target="_blank"><img src="img/awesplendor_thumbnail.jpg"></a>
 
-				<p class="tiny">"Sometimes the world is so beautiful I have to shoot rainbows out of my eyes."<br>
-				archival inkjet print on thick, matte 300gsm cold-press cotton rag paper.<br>
-				8½" x 11".</p>
+        <p class="tiny">My therapist said that I won therapy & gave me a gold star. Image unrelated?<br>
+        archival inkjet print on deckled, matte 300gsm cold-press cotton rag paper.<br>
+        8½" x 11".</p>
 
-				<p class="price">$35 <sub>CAD</sub></p>
+        <p class="price">$35 <sub>CAD</sub></p>
 
-				<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-				      <input type="hidden" name="cmd" value="_s-xclick" />
-				      <input type="hidden" name="hosted_button_id" value="BG3Z4YLZZ75N4" />
-				      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
-				    <img alt="" class="tracking" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-				</form>
+        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="RVQV8T2RCHHTS">
+              <input type="image" src="img/addcart.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" class="tracking" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+      </div>
 
-			</div>
+      <!-- up & art em -->
+      <div class="one-of-3">
+        <h3>Up & Art 'Em!</h3>
+        <a href="img/upnartem.jpg" target="_blank"><img src="img/upnartem_thumbnail.jpg"></a>
 
-			<!-- hugiverse -->
-			<div class="one-of-3">
-				<h3>Unified Theory of the Hugiverse</h3>
-				<a href="img/hugiverse.jpg" target="_blank"><img src="img/hugiverse_thumbnail.jpg"></a>
+        <p class="tiny">gmornin sleepyhead let's create the world!<br>
+        archival inkjet print on thick, matte 300gsm cold-press cotton rag paper.<br>
+        8½" x 11".</p>
 
-				<p class="tiny">"If you're feeling a little pressure, that's just the universe hugging you. It's science."<br>
-				due to cosmic circumstance, the particular shade of blue varies between prints.<br>
-				archival inkjet print on thick, matte 300gsm cold-press cotton rag paper.<br>
-				8½" x 11".</p>
+        <p class="price">$35 <sub>CAD</sub></p>
 
-				<p class="price">$35 <sub>CAD</sub></p>
+        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="DUMHFEHWGPLYJ">
+              <input type="image" src="img/addcart.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" class="tracking" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+      </div>
 
-				<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-				      <input type="hidden" name="cmd" value="_s-xclick" />
-				      <input type="hidden" name="hosted_button_id" value="9X4J8DLG9C5UJ" />
-				      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
-				    <img alt="" class="tracking" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-				</form>
-			</div>
-
-			<!-- woods wizard -->
+				<!-- woods wizard -->
 			<div class="one-of-3">
 				<h3>Woods Wizard</h3>
 				<a href="img/woodswizard.jpg" target="_blank"><img src="img/woodswizard_thumbnail.jpg"></a>
@@ -194,10 +191,10 @@
 				<p class="price">$50 <sub>CAD</sub></p>
 
 				<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-				      <input type="hidden" name="cmd" value="_s-xclick" />
-				      <input type="hidden" name="hosted_button_id" value="BH4XCXNTJZH48" />
-				      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
-				      <img alt="" class="tracking" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+				      <input type="hidden" name="cmd" value="_s-xclick">
+				      <input type="hidden" name="hosted_button_id" value="BH4XCXNTJZH48">
+				      <input type="image" src="img/addcart.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				      <img alt="" class="tracking" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 				</form>
 			</div>
 
@@ -212,12 +209,30 @@
 				<p class="price">$50 <sub>CAD</sub></p>
 
 				<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-			      <input type="hidden" name="cmd" value="_s-xclick" />
-			      <input type="hidden" name="hosted_button_id" value="8W98M6ZQ64ZWG" />
-			      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
-			    <img alt="" class="tracking" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+			      <input type="hidden" name="cmd" value="_s-xclick">
+			      <input type="hidden" name="hosted_button_id" value="8W98M6ZQ64ZWG">
+			      <input type="image" src="img/addcart.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+			    <img alt="" class="tracking" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 			  </form>
 			</div>
+
+      <!-- new growth -->
+      <div class="one-of-3">
+        <h3>New Growth</h3>
+        <a href="img/newgrowth1.jpg" target="_blank"><img src="img/newgrowth_thumbnail.jpg"></a>
+
+        <p class="tiny">SLOUGH OFF THE NURSING DECAY -- BE BORN ANEW! WOODS WIZARDS R HERE 4 U !<br>
+        printed on thick, 340gsm matte textured 13" x 19" cotton rag paper.</p>
+
+        <p class="price">$50 <sub>CAD</sub></p>
+
+        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="3CB759HV23JWC">
+            <input type="image" src="img/addcart.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+          <img alt="" class="tracking" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+      </div>
 
 			<!-- whims-o-tron -->
 			<div class="one-of-3">
@@ -231,15 +246,93 @@
 				<p class="price">$50 <sub>CAD</sub></p>
 
 				<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-				      <input type="hidden" name="cmd" value="_s-xclick" />
-				      <input type="hidden" name="hosted_button_id" value="PGFNDTGXQ63VL" />
-				      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
-				    <img alt="" class="tracking" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+				      <input type="hidden" name="cmd" value="_s-xclick">
+				      <input type="hidden" name="hosted_button_id" value="PGFNDTGXQ63VL">
+				      <input type="image" src="img/addcart.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+				    <img alt="" class="tracking" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 				</form>
 			</div>
 
+      <!-- tiger attack -->
+      <div class="one-of-3">
+        <h3>Tiger Attack</h3>
+        <a href="img/tigerattack.jpg" target="_blank"><img src="img/tigerattack_thumbnail.jpg"></a>
+
+        <p class="tiny">A vicious tiger attack. But please be not alarmed. It is only an image.<br>
+				archival inkjet print on thick, matte 300gsm cold-press cotton rag paper.<br>
+				8½" x 11".</p>
+
+        <p class="price">$35 <sub>CAD</sub></p>
+
+        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="57RP58MHYBEHA">
+              <input type="image" src="img/addcart.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" class="tracking" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+      </div>
+
+      <!-- fig 1 tiger -->
+      <div class="one-of-3">
+        <h3>fig. 1 - Tiger</h3>
+        <a href="img/fig1tiger.jpg" target="_blank"><img src="img/fig1tiger_thumbnail.jpg"></a>
+
+        <p class="tiny">Do you find yourself wondering what Tiger? Or even 'how Tiger', perhaps?<br>This print will be helpful to you.<br>
+				archival inkjet print on thick, matte 300gsm cold-press cotton rag paper.<br>
+				8½" x 11".</p>
+
+        <p class="price">$35 <sub>CAD</sub></p>
+
+        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="MNKRKQMS2WYCJ">
+              <input type="image" src="img/addcart.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" class="tracking" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+      </div>
+
+      <!-- hugiverse -->
+      <div class="one-of-3">
+        <h3>Unified Theory of the Hugiverse</h3>
+        <a href="img/hugiverse.jpg" target="_blank"><img src="img/hugiverse_thumbnail.jpg"></a>
+
+        <p class="tiny">"If you're feeling a little pressure, that's just the universe hugging you.<br>It's science."<br>
+        due to cosmic circumstance, the particular shade of blue varies between prints.<br>
+        archival inkjet print on thick, matte 300gsm cold-press cotton rag paper.<br>
+        8½" x 11".</p>
+
+        <p class="price">$35 <sub>CAD</sub></p>
+
+        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="9X4J8DLG9C5UJ">
+              <input type="image" src="img/addcart.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" class="tracking" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+        </form>
+      </div>
+
+      <!-- rainbow vision -->
+      <div class="one-of-3">
+        <h3>Rainbow Vision</h3>
+        <a href="img/rainbowvision.jpg" target="_blank"><img src="img/rainbowvision_thumbnail.jpg"></a>
+
+        <p class="tiny">"Sometimes the world is so beautiful I have to shoot rainbows out of my eyes."<br>
+        archival inkjet print on thick, matte 300gsm cold-press cotton rag paper.<br>
+        8½" x 11".</p>
+
+        <p class="price">$35 <sub>CAD</sub></p>
+
+        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="BG3Z4YLZZ75N4">
+              <input type="image" src="img/addcart.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" class="tracking" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+
+      </div>
 		</div>
 	</div>
+
 
   </main> <!-- end main page content -->
 
